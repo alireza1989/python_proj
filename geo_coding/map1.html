@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_26cafa63144d4256af73eb03bdaa9fc8 {
+            <style> #map_45153a867afa4e3285a014fc67f0a030 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_26cafa63144d4256af73eb03bdaa9fc8" ></div>
+            <div class="folium-map" id="map_45153a867afa4e3285a014fc67f0a030" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_26cafa63144d4256af73eb03bdaa9fc8 = L.map(
-                                  'map_26cafa63144d4256af73eb03bdaa9fc8',
+            var map_45153a867afa4e3285a014fc67f0a030 = L.map(
+                                  'map_45153a867afa4e3285a014fc67f0a030',
                                   {center: [38.58,-99.09],
                                   zoom: 6,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_eb997529e57342df86321249fb68ec46 = L.tileLayer(
+            var tile_layer_bb6e07905c10431a90079fff01c2046a = L.tileLayer(
                 'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,39 +65,43 @@
                     attribution: 'Map tiles by <a href="http://www.mapbox.com/m">Mapbox</a> Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_26cafa63144d4256af73eb03bdaa9fc8);
+                ).addTo(map_45153a867afa4e3285a014fc67f0a030);
 
         
     
+            var feature_group_34ec7a9a2962493aa47b7a9d4dbba96d = L.featureGroup(
+                ).addTo(map_45153a867afa4e3285a014fc67f0a030);
+        
+    
 
-            var marker_77b7129e1c1149cabd78a4d19bc40c6b = L.marker(
+            var marker_0362476b7e5843f5b536b0a99aa741cc = L.marker(
                 [38.2,-99.1],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_26cafa63144d4256af73eb03bdaa9fc8);
+                .addTo(feature_group_34ec7a9a2962493aa47b7a9d4dbba96d);
             
     
 
-                var icon_0bcfbcfcbd0f42cf8dc3e0f31137c12d = L.AwesomeMarkers.icon({
+                var icon_90704120274d4886a03961f521e01307 = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'green',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_77b7129e1c1149cabd78a4d19bc40c6b.setIcon(icon_0bcfbcfcbd0f42cf8dc3e0f31137c12d);
+                marker_0362476b7e5843f5b536b0a99aa741cc.setIcon(icon_90704120274d4886a03961f521e01307);
             
     
-            var popup_c9890843dcd245c397d289ea35c945c7 = L.popup({maxWidth: '300'});
+            var popup_861f13e998d8446b8dc04b1350b5ddae = L.popup({maxWidth: '300'});
 
             
-                var html_21d3b6a68f644075b0ec2d7a8672184e = $('<div id="html_21d3b6a68f644075b0ec2d7a8672184e" style="width: 100.0%; height: 100.0%;">I am a marker</div>')[0];
-                popup_c9890843dcd245c397d289ea35c945c7.setContent(html_21d3b6a68f644075b0ec2d7a8672184e);
+                var html_019424fd8d034f879024df39f6be5f22 = $('<div id="html_019424fd8d034f879024df39f6be5f22" style="width: 100.0%; height: 100.0%;">I am a marker</div>')[0];
+                popup_861f13e998d8446b8dc04b1350b5ddae.setContent(html_019424fd8d034f879024df39f6be5f22);
             
 
-            marker_77b7129e1c1149cabd78a4d19bc40c6b.bindPopup(popup_c9890843dcd245c397d289ea35c945c7);
+            marker_0362476b7e5843f5b536b0a99aa741cc.bindPopup(popup_861f13e998d8446b8dc04b1350b5ddae);
 
             
         
